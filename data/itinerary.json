@@ -116,7 +116,7 @@
         },
         {
           "time": "Approximately 2:00–2:30 p.m.",
-          "activity": "Reach Nanaimo with buffer for traffic, a short stop, or road delays"
+          "activity": "Charge at Electrify Canada, 4585 Uplands Drive, targeting 55–65% before the ferry"
         },
         {
           "time": "3:00–3:15 p.m.",
@@ -210,5 +210,79 @@
     "Confirm exact travel dates before adding ferry departure times or restaurant hours.",
     "Day 3 is anchored by a target 4:00 p.m. Departure Bay sailing; leave Ucluelet by 11:00 a.m. and arrive at the terminal by 3:00–3:15 p.m.",
     "Recheck seasonal road conditions, operating hours, and Michelin distinctions shortly before booking."
-  ]
+  ],
+  "chargingPlan": {
+    "vehicle": {
+      "year": 2023,
+      "make": "Lucid",
+      "model": "Air Touring",
+      "departureStateOfCharge": 100,
+      "planningRangeMiles": 384,
+      "planningNote": "Uses the more conservative EPA configuration for the 2023 Touring. Actual range varies with wheels, temperature, speed, elevation, weather, and battery condition."
+    },
+    "preferences": {
+      "primaryNetworks": [
+        "Electrify Canada",
+        "Electrify America"
+      ],
+      "preferredPowerKw": 350,
+      "minimumArrivalReservePercent": 15
+    },
+    "plannedStops": [
+      {
+        "day": 1,
+        "status": "Planned",
+        "network": "Electrify Canada",
+        "name": "Canadian Tire Nanaimo",
+        "address": "4585 Uplands Drive, Nanaimo, BC",
+        "maximumPowerKw": 350,
+        "timing": "After the Duke Point ferry and before continuing to Parksville",
+        "targetStateOfChargePercent": "90–95",
+        "reason": "Creates the energy reserve needed for Parksville, Highway 4, Ucluelet, and the return to Nanaimo without depending on a west-coast fast charger."
+      },
+      {
+        "day": 3,
+        "status": "Planned",
+        "network": "Electrify Canada",
+        "name": "Canadian Tire Nanaimo",
+        "address": "4585 Uplands Drive, Nanaimo, BC",
+        "maximumPowerKw": 350,
+        "timing": "Before checking in for the 4:00 p.m. Departure Bay ferry",
+        "targetStateOfChargePercent": "55–65",
+        "reason": "Provides ample reserve for Horseshoe Bay, Vancouver, and hotel arrival while using the trip's preferred high-power network."
+      },
+      {
+        "day": 3,
+        "status": "Overnight",
+        "network": "Loden Hotel",
+        "name": "Loden Hotel EV Power-Up Stations",
+        "address": "1177 Melville Street, Vancouver, BC",
+        "maximumPowerKw": null,
+        "timing": "Overnight valet parking",
+        "targetStateOfChargePercent": "80–90",
+        "reason": "Complimentary hotel charging eliminates the need for a Day 4 fast-charging stop."
+      }
+    ],
+    "contingencies": [
+      {
+        "area": "Port Alberni / Highway 4",
+        "trigger": "Use a verified CCS fast charger if the car predicts arrival at Nanaimo below 15% or conditions materially reduce range.",
+        "note": "This is a reliability backup, not a preferred-network stop. Check live charger status in the Lucid, Electrify Canada, BC Hydro EV, or PlugShare app before leaving Parksville and Ucluelet."
+      },
+      {
+        "area": "Nanaimo",
+        "name": "BC Hydro Rock City Centre",
+        "address": "2980 Island Highway, Nanaimo, BC",
+        "maximumPowerKw": 400,
+        "trigger": "Use if the Electrify Canada site is unavailable or congested.",
+        "note": "The site includes high-power CCS equipment but is outside the preferred Electrify network."
+      }
+    ],
+    "operatingGuidance": [
+      "Navigate to the charging station in the Lucid so the battery can precondition before arrival.",
+      "Use a 350 kW dispenser when available; the 2023 Air Touring will request only the power it can accept.",
+      "Check live station status and the vehicle's predicted arrival state of charge before each Highway 4 leg.",
+      "Do not rely on estimated percentages when road, weather, or charger conditions differ from the plan."
+    ]
+  }
 }
