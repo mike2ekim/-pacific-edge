@@ -1,1 +1,214 @@
-[]
+{
+  "title": "A Michelin-Inspired British Columbia Coastal Road Trip",
+  "brandTitle": "Pacific Edge",
+  "duration": {
+    "days": 4,
+    "nights": 3
+  },
+  "season": "Summer 2026",
+  "route": [
+    "Bellingham",
+    "Parksville",
+    "Ucluelet",
+    "Vancouver",
+    "Bellingham"
+  ],
+  "theme": "Beaches, rainforest, rugged Pacific coast, and a polished culinary finish in Vancouver.",
+  "days": [
+    {
+      "day": 1,
+      "title": "Crossing Into Island Time",
+      "route": "Bellingham → Tsawwassen → Duke Point → Parksville",
+      "overnight": {
+        "name": "Tigh-Na-Mara Seaside Spa Resort",
+        "location": "Parksville"
+      },
+      "summary": "Cross into Canada, take the ferry to Vancouver Island, and begin the trip at an intentionally slower pace beside Rathtrevor Beach.",
+      "activities": [
+        "Drive from Bellingham to the Tsawwassen ferry terminal",
+        "Sail from Tsawwassen to Duke Point",
+        "Check in at Tigh-Na-Mara Seaside Spa Resort",
+        "Walk Rathtrevor Beach",
+        "Book a spa treatment or cedar barrel experience",
+        "Watch sunset along the shoreline"
+      ],
+      "dining": {
+        "approach": "Keep dinner relaxed after the travel day and save the tasting-menu experiences for later in the trip."
+      },
+      "pace": "Relaxed"
+    },
+    {
+      "day": 2,
+      "title": "Across the Island to the Pacific",
+      "route": "Parksville → Cathedral Grove → Pacific Rim → Ucluelet",
+      "overnight": {
+        "name": "Pluvio Restaurant + Rooms",
+        "location": "Ucluelet"
+      },
+      "summary": "Follow Highway 4 from Vancouver Island's eastern shore through waterfalls, old-growth forest, lakes, and mountains to the open Pacific.",
+      "stops": [
+        "Little Qualicum Falls",
+        "Cathedral Grove",
+        "Sproat Lake",
+        "Kennedy Lake",
+        "Long Beach",
+        "Ucluelet"
+      ],
+      "activities": [
+        "Walk a section of the Wild Pacific Trail before dinner"
+      ],
+      "dining": {
+        "restaurant": "Pluvio",
+        "experience": "Chef's tasting menu",
+        "pairing": "Wine pairing or non-alcoholic pairing",
+        "reservationRequired": true
+      },
+      "pace": "Scenic drive with several short stops"
+    },
+    {
+      "day": 3,
+      "title": "A Slow Ucluelet Morning, City Lights",
+      "route": "Ucluelet → Departure Bay → Horseshoe Bay → Vancouver",
+      "overnight": {
+        "name": "Loden Hotel",
+        "location": "Vancouver"
+      },
+      "summary": "Enjoy breakfast and a slow final morning in Ucluelet, drive to Nanaimo for the ferry, and finish the trip with a Michelin-starred dinner in Vancouver.",
+      "morning": [
+        "Breakfast in the room or on the private balcony at Pluvio Restaurant + Rooms",
+        "Optional short harbour walk or relaxed time in Ucluelet",
+        "Check out and collect food for the drive"
+      ],
+      "breakfast": {
+        "location": "Pluvio Restaurant + Rooms",
+        "includedWithRoom": true,
+        "service": "Prepared by the Pluvio team and placed in the room refrigerator before arrival",
+        "includes": [
+          "Granola",
+          "Fruit",
+          "Yogurt",
+          "Juice",
+          "Savory breakfast treat",
+          "Local Foggy Bean coffee",
+          "Tea Leaves tea"
+        ]
+      },
+      "lunch": {
+        "approach": "Pick up food in Ucluelet for the drive or stop in Port Alberni, depending on road timing.",
+        "note": "Keep lunch flexible so the 4:00 p.m. ferry remains protected."
+      },
+      "schedule": [
+        {
+          "time": "8:00 a.m.",
+          "activity": "Enjoy the included Pluvio breakfast in the room or on the private balcony"
+        },
+        {
+          "time": "9:00–10:00 a.m.",
+          "activity": "Optional short harbour walk or relaxed time in Ucluelet"
+        },
+        {
+          "time": "10:00–10:45 a.m.",
+          "activity": "Check out and pick up food for the drive"
+        },
+        {
+          "time": "11:00 a.m.",
+          "activity": "Depart Ucluelet for Nanaimo"
+        },
+        {
+          "time": "Approximately 2:00–2:30 p.m.",
+          "activity": "Reach Nanaimo with buffer for traffic, a short stop, or road delays"
+        },
+        {
+          "time": "3:00–3:15 p.m.",
+          "activity": "Arrive and check in at Departure Bay terminal"
+        },
+        {
+          "time": "4:00 p.m.",
+          "activity": "BC Ferries sailing from Departure Bay to Horseshoe Bay"
+        },
+        {
+          "time": "Approximately 5:40 p.m.",
+          "activity": "Arrive at Horseshoe Bay, subject to the published sailing schedule"
+        },
+        {
+          "time": "Approximately 6:30–7:00 p.m.",
+          "activity": "Check in at the Loden Hotel"
+        },
+        {
+          "time": "8:00 p.m. or later",
+          "activity": "Michelin-starred dinner in Vancouver"
+        }
+      ],
+      "travel": [
+        "Drive from Ucluelet to Nanaimo",
+        "Take the 4:00 p.m. sailing from Departure Bay to Horseshoe Bay",
+        "Continue to the Loden Hotel in Vancouver"
+      ],
+      "dinner": {
+        "theme": "Michelin Vancouver",
+        "firstChoice": "Published on Main",
+        "alternatives": [
+          "Kissa Tanto",
+          "Barbara",
+          "St. Lawrence",
+          "AnnaLena",
+          "Burdock & Co"
+        ],
+        "note": "Published on Main and the listed alternatives currently hold one Michelin star in the Michelin Guide Vancouver 2025. Recheck the current guide before booking."
+      },
+      "pace": "Comfortable travel day; depart Ucluelet by 11:00 a.m. to protect the ferry reservation",
+      "timingNotes": [
+        "Pluvio estimates the normal drive from Ucluelet to Nanaimo at about two and a half hours, but Highway 4 is winding and delays are possible.",
+        "BC Ferries advises booked vehicle passengers to check in 45–60 minutes before departure.",
+        "Confirm that a 4:00 p.m. sailing is offered on the exact travel date before finalizing this schedule."
+      ]
+    },
+    {
+      "day": 4,
+      "title": "A Slow Vancouver Morning",
+      "route": "Vancouver → Bellingham",
+      "summary": "Sleep in, enjoy a final waterfront walk and breakfast, then make the drive home to Bellingham.",
+      "activities": [
+        "Walk the seawall through Coal Harbour or Stanley Park",
+        "Have breakfast in Vancouver",
+        "Drive from Vancouver to Bellingham"
+      ],
+      "pace": "Easy departure day"
+    }
+  ],
+  "reservations": [
+    {
+      "item": "BC Ferries: Tsawwassen → Duke Point",
+      "priority": "High",
+      "note": "Reserve the vehicle crossing in advance."
+    },
+    {
+      "item": "BC Ferries: Departure Bay → Horseshoe Bay",
+      "priority": "High",
+      "note": "Reserve the vehicle crossing in advance."
+    },
+    {
+      "item": "Tigh-Na-Mara Seaside Spa Resort",
+      "priority": "High"
+    },
+    {
+      "item": "Pluvio Restaurant + Rooms",
+      "priority": "High",
+      "note": "Reserve both the room and tasting menu; seating is limited."
+    },
+    {
+      "item": "Loden Hotel",
+      "priority": "High"
+    },
+    {
+      "item": "Vancouver Michelin dinner",
+      "priority": "High",
+      "note": "Published on Main is the first choice; book as soon as the trip dates are fixed."
+    }
+  ],
+  "planningNotes": [
+    "Confirm exact travel dates before adding ferry departure times or restaurant hours.",
+    "Day 3 is anchored by a target 4:00 p.m. Departure Bay sailing; leave Ucluelet by 11:00 a.m. and arrive at the terminal by 3:00–3:15 p.m.",
+    "Recheck seasonal road conditions, operating hours, and Michelin distinctions shortly before booking."
+  ]
+}
