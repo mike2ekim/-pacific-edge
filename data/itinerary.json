@@ -49,6 +49,7 @@
       "stops": [
         "Little Qualicum Falls",
         "Cathedral Grove",
+        "BC Hydro fast-charging hub at Save-On-Foods in Port Alberni",
         "Sproat Lake",
         "Kennedy Lake",
         "Long Beach",
@@ -230,15 +231,15 @@
     },
     "plannedStops": [
       {
-        "day": 1,
+        "day": 2,
         "status": "Planned",
-        "network": "Electrify Canada",
-        "name": "Canadian Tire Nanaimo",
-        "address": "4585 Uplands Drive, Nanaimo, BC",
-        "maximumPowerKw": 350,
-        "timing": "After the Duke Point ferry and before continuing to Parksville",
-        "targetStateOfChargePercent": "90–95",
-        "reason": "Creates the energy reserve needed for Parksville, Highway 4, Ucluelet, and the return to Nanaimo without depending on a west-coast fast charger."
+        "network": "BC Hydro EV",
+        "name": "Save-On-Foods Port Alberni charging hub",
+        "address": "3756 10th Avenue, Port Alberni, BC",
+        "maximumPowerKw": 180,
+        "timing": "After Cathedral Grove and before continuing west toward Sproat Lake and Ucluelet",
+        "targetStateOfChargePercent": "80–85",
+        "reason": "Provides a deliberate DC fast-charge before the remote Highway 4 segment and avoids relying on any charging at Pluvio. This is the strongest well-documented multi-port fast-charging hub directly on the Day 2 route."
       },
       {
         "day": 3,
@@ -266,8 +267,8 @@
     "contingencies": [
       {
         "area": "Port Alberni / Highway 4",
-        "trigger": "Use a verified CCS fast charger if the car predicts arrival at Nanaimo below 15% or conditions materially reduce range.",
-        "note": "This is a reliability backup, not a preferred-network stop. Check live charger status in the Lucid, Electrify Canada, BC Hydro EV, or PlugShare app before leaving Parksville and Ucluelet."
+        "trigger": "If the 180 kW Save-On-Foods hub is unavailable, use the two 50 kW BC Hydro chargers at 3455 Johnston Road before continuing to Ucluelet.",
+        "note": "Check live charger status in the Lucid, BC Hydro EV, or PlugShare app before leaving Parksville. Do not continue west unless the vehicle predicts a comfortable Ucluelet arrival and at least 15% at the next planned charger."
       },
       {
         "area": "Nanaimo",
@@ -282,6 +283,7 @@
       "Navigate to the charging station in the Lucid so the battery can precondition before arrival.",
       "Use a 350 kW dispenser when available; the 2023 Air Touring will request only the power it can accept.",
       "Check live station status and the vehicle's predicted arrival state of charge before each Highway 4 leg.",
+      "No charging at Pluvio is assumed or required by this plan.",
       "Do not rely on estimated percentages when road, weather, or charger conditions differ from the plan."
     ]
   }
