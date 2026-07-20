@@ -122,6 +122,8 @@ body.loaded .overlay {
 .overlay h2 {
     font-weight: 300;
     margin-bottom: 1rem;
+    padding: 0 24px;
+    text-align: center;
 }
 
 .scroll-indicator {
