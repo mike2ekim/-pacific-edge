@@ -90,6 +90,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // ==========================================
+    // Mobile Navigation
+    // ==========================================
+
+    const menuToggle = navbar.querySelector(".menu-toggle");
+    const navigationLinks = navbar.querySelectorAll("a");
+
+    function setMenuOpen(isOpen) {
+
+        navbar.classList.toggle("menu-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+
+    }
+
+    menuToggle.addEventListener("click", () => {
+
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        setMenuOpen(!isOpen);
+
+    });
+
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+            setMenuOpen(false);
+            menuToggle.focus();
+        }
+
+    });
+
+    document.addEventListener("click", (event) => {
+
+        if (!navbar.contains(event.target)) {
+            setMenuOpen(false);
+        }
+
+    });
+
+    window.addEventListener("resize", () => {
+
+        if (window.innerWidth > 900) {
+            setMenuOpen(false);
+        }
+
+    });
+
+
+    // ==========================================
     // Smooth Anchor Scrolling
     // ==========================================
 
@@ -98,6 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("click", (event) => {
 
             event.preventDefault();
+            setMenuOpen(false);
 
             const target = document.querySelector(
                 link.getAttribute("href")
