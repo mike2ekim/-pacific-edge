@@ -258,7 +258,7 @@ body.loaded .overlay {
 }
 
 .day-copy .day-title {
-    margin: 0 0 32px;
+    margin: 0 0 18px;
     font-family: "Playfair Display", serif;
     font-size: clamp(1.35rem, 2.2vw, 1.9rem);
     font-weight: 400;
@@ -267,6 +267,29 @@ body.loaded .overlay {
 
 .day-copy p {
     margin-bottom: 24px;
+}
+
+.day-copy .day-distance {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    align-items: center;
+    margin-bottom: 28px;
+    color: var(--muted);
+    font-size: .76rem;
+    letter-spacing: .1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.day-distance strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.day-distance span {
+    padding-left: 14px;
+    border-left: 1px solid var(--border);
 }
 
 .day-reverse .day-photo {
