@@ -26,8 +26,7 @@ html {
 
 #journey,
 #itinerary,
-#vancouver,
-#lucid {
+#vancouver {
     scroll-margin-top: 82px;
 }
 
@@ -455,65 +454,46 @@ body.loaded .overlay {
     text-transform: uppercase;
 }
 
-.lucid-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    min-height: 70vh;
-    background: white;
-}
-
-.lucid-section img {
-    width: 100%;
-    height: 100%;
-    min-height: 70vh;
-    object-fit: cover;
-}
-
-.lucid-section > div {
-    padding: 80px;
-}
-
-.lucid-section h2 {
-    margin-bottom: 24px;
-    font-family: "Playfair Display", serif;
-    font-size: clamp(2.8rem, 5vw, 4rem);
-}
-
-.lucid-section p {
-    max-width: 600px;
-    color: var(--muted);
-}
-
-.charging-section {
-    padding: 140px 40px;
+.day-charging {
+    grid-column: 1 / -1;
+    padding: 64px clamp(28px, 6vw, 80px);
+    border-top: 1px solid #cfddd9;
     background: #edf3f1;
 }
 
-.charging-header {
-    max-width: 780px;
-    margin: 0 auto 64px;
-    text-align: center;
+.day-charging-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 48px;
+    max-width: var(--max-width);
+    margin: 0 auto 32px;
 }
 
-.charging-header h2 {
-    margin-bottom: 24px;
+.day-charging-header h3 {
     font-family: "Playfair Display", serif;
-    font-size: clamp(2.8rem, 5vw, 4.5rem);
-    line-height: 1.1;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.15;
 }
 
-.charging-header p {
+.day-charging-header p {
+    max-width: 560px;
     color: var(--muted);
-    font-size: 1.08rem;
 }
 
-.charging-grid {
+.day-charging-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     max-width: var(--max-width);
     margin: 0 auto;
+}
+
+.day-charging-grid.single {
+    grid-template-columns: minmax(0, 1.45fr) minmax(260px, .55fr);
+}
+
+.day-charging-grid.day-three {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .charge-card {
@@ -540,7 +520,7 @@ body.loaded .overlay {
 }
 
 .charge-card h3,
-.charging-backup h3 {
+.charge-backup-inline h3 {
     margin-bottom: 6px;
     font-family: "Playfair Display", serif;
     font-size: 1.75rem;
@@ -567,18 +547,22 @@ body.loaded .overlay {
     color: var(--text);
 }
 
-.charging-backup {
+.charge-backup-inline {
     display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: 50px;
-    align-items: center;
-    max-width: var(--max-width);
-    margin: 24px auto 0;
-    padding: 30px 34px;
+    gap: 12px;
+    align-content: center;
+    padding: 30px;
     border: 1px dashed #96aaa4;
 }
 
-.charging-backup p {
+.day-charging-grid.day-three .charge-backup-inline {
+    grid-column: 1 / -1;
+    grid-template-columns: .8fr 1.2fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.charge-backup-inline p {
     color: var(--muted);
 }
 
@@ -676,9 +660,10 @@ footer {
     }
 
     .restaurant-grid,
-    .lucid-section,
-    .charging-grid,
-    .charging-backup {
+    .day-charging-grid,
+    .day-charging-grid.single,
+    .day-charging-grid.day-three,
+    .day-charging-grid.day-three .charge-backup-inline {
         grid-template-columns: 1fr;
     }
 
@@ -686,16 +671,19 @@ footer {
         padding: 90px 24px;
     }
 
-    .lucid-section img {
-        min-height: 50vh;
+    .day-charging {
+        padding: 48px 28px;
     }
 
-    .lucid-section > div {
-        padding: 64px 28px;
+    .day-charging-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
 
-    .charging-section {
-        padding: 90px 24px;
+    .day-charging-grid.day-three .charge-backup-inline {
+        grid-column: auto;
+        gap: 12px;
     }
 
     .timeline {
