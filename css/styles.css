@@ -24,6 +24,13 @@ html {
     scroll-behavior: smooth;
 }
 
+#journey,
+#itinerary,
+#vancouver,
+#lucid {
+    scroll-margin-top: 82px;
+}
+
 body {
     background: var(--bg);
     color: var(--text);
@@ -72,6 +79,25 @@ nav ul {
 nav a {
     color: var(--text);
     text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px 0;
+    background: var(--text);
+    transition: transform .25s ease, opacity .2s ease;
 }
 
 /* Hero */
@@ -523,8 +549,60 @@ footer {
         padding: 18px 24px;
     }
 
+    .menu-toggle {
+        display: block;
+        margin: -8px -10px -8px 0;
+    }
+
     nav ul {
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 24px 20px;
+        background: rgba(255,255,255,.96);
+        box-shadow: 0 18px 28px rgba(0,0,0,.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: opacity .2s ease, transform .2s ease, visibility .2s;
+        pointer-events: none;
+    }
+
+    nav li {
+        border-top: 1px solid var(--border);
+    }
+
+    nav li:first-child {
+        border-top: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    #navbar.menu-open ul {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    #navbar.menu-open .menu-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    #navbar.menu-open .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #navbar.menu-open .menu-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
     }
 
     .day {

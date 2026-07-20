@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="css/styles.css?v=20260719-6">
+    <link rel="stylesheet" href="css/styles.css?v=20260719-7">
 </head>
 
 <body class="loaded">
@@ -21,7 +21,17 @@
 <nav id="navbar">
     <div class="logo">Pacific Edge</div>
 
-    <ul>
+    <button class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </button>
+
+    <ul id="primary-navigation">
         <li><a href="#journey">Journey</a></li>
         <li><a href="#itinerary">Itinerary</a></li>
         <li><a href="#vancouver">Vancouver</a></li>
@@ -439,7 +449,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/route-map.js?v=20260719-4"></script>
-<script src="js/app.js?v=20260719-4"></script>
+<script src="js/app.js?v=20260719-5"></script>
 
 </body>
 </html>
